@@ -71,7 +71,7 @@ private extension FloatingPoint {
         
         //calculate the bearing value from old and new coordinates
         //
-        let calBearing: Float = getHeadingForDirection(fromCoordinate: oldCoordinate, toCoordinate: newCoordinate)
+        let calBearing: Float = bearing//getHeadingForDirection(fromCoordinate: oldCoordinate, toCoordinate: newCoordinate)
         marker.groundAnchor = CGPoint(x: CGFloat(0.5), y: CGFloat(0.5))
         marker.rotation = CLLocationDegrees(calBearing); //found bearing value by calculation when marker add
         marker.position = oldCoordinate; //this can be old position to make car movement to new position
